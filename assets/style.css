@@ -1,0 +1,98 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+.header-container {
+ color: black;
+  border-bottom: black;
+  border-radius: 25%;
+}
+.jumbotron {
+  text-align: center;
+  border-bottom: solid;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+.input-container{
+  
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
+.model-container {
+  padding-top: 50%;
+}
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.saveBtn {
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn{
+  background-color:#1e88e5;
+}
+
+.model-container {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: Orgb(0,0,0,0.4);
+}
+
+.modal {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+width: 80%;
+}
+
+.modal—container--close {
+  color: 1M;
+  float: right;
+  font-size: 28px;
+  font-weight: bold
+  }
+
+
+  .modal—container--close:hover,
+  .modal—container--close:focus {
+  color: ❑black;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .event {
+    padding-top: 8px;
+    font-size: 14px;
+    position: absolute;
+    height: 100%;
+  }

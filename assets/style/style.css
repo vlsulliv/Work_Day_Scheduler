@@ -17,7 +17,7 @@ body {
   white-space: pre-wrap;
 }
 .input-container{
-  
+
 }
 input[type=text], select {
   width: 100%;
@@ -82,7 +82,6 @@ width: 80%;
   font-weight: bold
   }
 
-
   .modal—container--close:hover,
   .modal—container--close:focus {
   color: ❑black;
@@ -96,3 +95,18 @@ width: 80%;
     position: absolute;
     height: 100%;
   }
+  .blue-color {
+    color:blue;
+    }
+    .green-color {
+    color:green;
+    }
+    .teal-color {
+    color:teal;
+    }
+    .yellow-color {
+    color:yellow;
+    }
+    .red-color {
+    color:red;
+    }

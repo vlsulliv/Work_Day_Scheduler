@@ -1,87 +1,52 @@
-/*=============================================
-=            SCRIPT TO CHANGE HTML           =
-=============================================*/
+/*========== ADD DATE/TIME ============*/
+
 moment().format();
-let day = moment().format('MMM DD, YYYY');
 console.log(moment().format('LT'));
+// let date = moment().format('MMM DD, YYYY');
+document.getElementById('currentDay').innerHTML = moment().format('MMM DD, YYYY');
 
-let date = document.getElementById('currentDay');
-date.innerHTML = day
+/*======== GLOBALS ============*/
 
-document.getElementById('9am').style.color = "lightblue";
-
-
-
-// ! DISPLAY CURRENT DATE 
-let m = moment();
-// let day = moment().format('MMMM Do YYYY'); 
-
-const timeBlock = document.getElementById("currentDay");
-timeBlock.innerHTML = day;
-
-let time = m.format('LT'); // H:M AM|PM
-console.log(time);
-
-
-// ! USE DOM APIs TO REFERENCE ELEMENTS
-// ! DECLARE VARIABLES/ INITIALIZE WITH ELEMENTS
+let time = moment().format('H');
 let table = document.getElementById('table');
-// let formData = document.querySelector('textarea');
-let store = hour => { localStorage.setItem(hour) };
+let hour = document.getElementsByClassName('hour')
+console.log(EventTarget.)
+let past, present, future;
 
-// ! FUNCTINON TO ADD QUERY ADD QUERY SELECTOR TO ALL BUTTONS
-// ! stop default behavior and call another function
-document.querySelectorAll('.saveBtn').forEach(item =>{
-    item.addEventListener('click', event => {
-    event.preventDefault()
-        let formData = document.getAttributeById.previousSibling.value
-        let myKey = document.getAttributeById("9AM")
-        localStorage.setItem(myKey, formData );
+/*== ADD QUERY SELECTOR TO ALL BUTTONS ==*/
+window.onload = (event) => {
+    document.querySelectorAll('button').forEach(item =>{ 
+        item.addEventListener('click', event => {
+            event.preventDefault()
+
+        })
     })
-})
-let retrieve = getHour => { localStorage.getItem(form)}
+}
+
+// function setBtnAction() {
+//     document.querySelectorAll('button').forEach(item =>{
+//     item.addEventListener('click', event => {event.preventDefault()
+//     console.log('clicked')});
+//     // let key = document.getElementsByClassName('hour').innerHTML()
+//     })
+// }
+
+/*======== TABLE COLOR ============*/
+
+function storeText() {
+    let key = document.getElementsByClassName('hour').previousSibling.value
+}
+
+document.querySelector("textarea")
+
+/*======== SCRIPT TO CHANGE HTML ============*/
+
+function timeTracker() {
+    hour.forEach
+
+}
+// let retrieve = getHour => { localStorage.getItem(form)}
+// let myKey = document.getAttributeById("9AM")
 
 
-
-
-
-
-
-
-        // ! ADD EVENT LISTENER TO ALL BUTTONS 
-/*
-  *  -----------------------------------------------------------------
-  *  const clickHandle
-  *      let elmnt = event.target.getElementbyClass('saveBtn');
-  *          addListeners.setAttribute("mybtn");
-  *          if (event.target.mathces('button')) {
-  *          count++;
-  *          event.target.setAttribute('saveBtn', count);
-  *          event.target.textContent = `Clicks: ${count}`;
-  *      }
-  *  let saveBtn = event.target.getAttribute('mybtn');
-  *  
-  *  -----------------------------------------------------------------
-  *  saveBtn.querySelectorAll(`button[class^=saveBtn]`);
-  *  btns.forEach(btn => {
-  *      btn.addEventListener('click', () => {
-  *          console.log(target.id);
-  *      }
-  *  )
-  *  -----------------------------------------------------------------
-  *  
-  *  let pt = function print(x) {
-  *      if (x || typeof(String)){
-  *          console.log(x)
-  *      } 
-  *  }
-  *  -----------------------------------------------------------------
-  * for( i = 0; i < time.lengeth; i++) {
-  *  time[i].addEventListener('click', clickHandler)
-  * 
-  *  let blockHour = document.getElementsByClassName('block-hour');
-  *  let ptag = document.getElementsByClassName('col-1');
-  *  let form = document.getElement('textarea');
-  * 
-  */
- 
+/*=====  SCRIPT TO CHANGE HTML ========*/

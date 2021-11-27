@@ -6,6 +6,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /***************************
@@ -14,19 +16,17 @@ body {
 .header-container {
  color: black;
   border-bottom: black;
+  padding-top: 50px;
 }
 
 .jumbotron {
   text-align: center;
   border-bottom: solid;
+  box-shadow: 0 0 20px 1px grey;
 }
 
 .description {
   white-space: pre-wrap;
-}
-
-.input- container{
-
 }
 
 input[type=text], select {
@@ -37,21 +37,18 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+
 }
 
 .model-container {
   padding-top: 50%;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
 }
 
 .saveBtn {
@@ -131,25 +128,35 @@ input[type=text], select {
   color:red;
 }
 
+.red-color {
+  color:grey;
+}
+
 /***************************
      STYLE TIME COLUMN
 ***************************/
 
  p span{
-   font-weight: bolder;
+   font-weight: 0.5px;
  }
 
- .hour{
-   font-weight: bolder;
+.hour{
+   font-weight: 1px;
    font-family: sans-serif;
- }
-
- /* .hour{
-   border-style: dashed;
-   padding: 10px;
-   padding-top: 15px;
-   margin-top: 10px;
-   margin-bottom: 10px;
+   background-color: #ffffff;
+   color: #000000;
+   display:flex;
    align-items: center;
-   height: 80px;
- } */
+   justify-content: center;
+   border-style: solid;
+   border-width: 1px;
+   height: inherit;
+}
+
+#currentDay{
+  padding-top:5px;
+  /* margin-top: 50px; */
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}

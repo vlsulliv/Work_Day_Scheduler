@@ -3,88 +3,107 @@
 
 <head>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
-    <title>Work Day Scheduler</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
+  <title>Work Day Scheduler</title>
 
 </head>
 
-    <body>
-        <!-- HEADER -->
-        <header class="jumbotron">
-            <h1 class="display-3">Work Day Scheduler</h1>
-            <p class="lead">A simple calendar app for scheduling your work day</p>
-            <p id="currentDay" class="lead"></p>
-          </header>
+<body>
+  <!-- HEADER -->
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <h4 id="currentDay" class="lead"></h4>
+  </header>
 
 
-          <!-- TIME BLOCKS -->
-          <div class="container">
-            <div class="row">
-              <p id="9" class="col-1 hour">9:00AM</p>
-              <textarea class="col-10" id="9am" attr="9"></textarea>
-              <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
-            </div>
-            <div class="row">
-              <p id="10" class="col-1 hour">10:00AM</p>
-              <textarea class="col-10" id="9am" attr="9"></textarea>
-              <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
-            </div>
-            <div class="row">
-              <p id="11" class="col-1 hour">11:00AM</p>
-              <textarea class="col-10" id="9am" attr="9"></textarea>
-              <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
-            </div>
-              <!-- <div class="row">
+  <!-- TIME BLOCKS -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-1 hour" id="9" >
+        9AM
+      </div>
+      <textarea class="col-10" id="9am" attr="9"></textarea>
+      <button class="col-1 saveBtn"><i class="fa fa-save color"></i></button>
+    </div>
+
+    <div class="row">
+      <div id="10" class="col-1 hour">
+        10AM
+      </div>
+      <textarea class="col-10" id="9am" attr="9"></textarea>
+      <button class="col-1 saveBtn"><i class="fa fa-save color"></i></button>
+    </div>
+
+    <div class="row">
+      <div id="11" class="col-1 hour">
+        11AM
+      </div>
+      <textarea class="col-10" id="9am" attr="9"></textarea>
+      <button class="col-1 saveBtn"><i class="fa fa-save color"></i></button>
+    </div>
+
+    <!-- <div class="row">
                 <p class="col-1 hour">12PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
                 <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
               </div>
+
               <div class="row">
                 <p class="col-1 hour">1PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
                 <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
               </div>
+
               <div class="row">
                 <p class="col-1 hour">2PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
                 <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
               </div>
+
               <div class="row">
                 <p class="col-1 hour">3PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
                 <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
               </div>
+
               <div class="row">
                 <p class="col-1 hour">4PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
                 <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
               </div>
+
               <div class="row">
                 <p class="col-1 hour">5PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
                 <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
               </div>
+
               <div class="row">
                 <p class="col-1 hour">6PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
                 <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
               </div>
+
               <div class="row">
                 <p class="col-1 hour">7PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
                 <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
               </div>
+
               <div class="row">
                 <p class="col-1 hour">8PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
                 <button class="col-1 saveBtn"><i class="fa fa-save color" ></i></button>
               </div>
+
               <div class="row">
                 <p class="col-1 hour">9PM</p>
                 <textarea class="col-10" id="9am" attr="9"></textarea>
@@ -93,10 +112,10 @@
 
 
     <!-- LINK JS TO HTML -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
-    </body>
+</body>
 
 </html>

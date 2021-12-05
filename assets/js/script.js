@@ -1,52 +1,41 @@
-/*========== ADD DATE/TIME ============*/
-
 moment().format();
 console.log(moment().format('LT'));
-// let date = moment().format('MMM DD, YYYY');
-document.getElementById('currentDay').innerHTML = moment().format('MMM DD, YYYY');
+const date = moment().format('MMM DD, YYYY');
+const now = new Date();
+let hour = moment().format('H')
+document.getElementById('currentDay').innerHTML = date;
 
-/*======== GLOBALS ============*/
+/*======== STORAGE ============*/
 
-let time = moment().format('H');
-let table = document.getElementById('table');
-let hour = document.getElementsByClassName('hour')
-console.log(EventTarget.)
-let past, present, future;
+console.log('1')
+document.getElementById("btn").addEventListener("click", function() {
+    let text = document.getElementsByClassName('text');
+    console.log('2')
+    localStorage.setItem(hour, text)
+})
 
-/*== ADD QUERY SELECTOR TO ALL BUTTONS ==*/
-window.onload = (event) => {
-    document.querySelectorAll('button').forEach(item =>{ 
-        item.addEventListener('click', event => {
-            event.preventDefault()
 
-        })
-    })
+function retrieve(){
+    for (var i=0; i<Array.length; i+1){
+        console.log(array[0])
+    }
 }
-
-// function setBtnAction() {
-//     document.querySelectorAll('button').forEach(item =>{
-//     item.addEventListener('click', event => {event.preventDefault()
-//     console.log('clicked')});
-//     // let key = document.getElementsByClassName('hour').innerHTML()
-//     })
-// }
-
-/*======== TABLE COLOR ============*/
-
-function storeText() {
-    let key = document.getElementsByClassName('hour').previousSibling.value
-}
-
-document.querySelector("textarea")
 
 /*======== SCRIPT TO CHANGE HTML ============*/
+var div_list = document.querySelectorAll('textarea')
+var div_array=[...div_list];
 
-function timeTracker() {
-    hour.forEach
-
+let present = function() {
+        console.log(change);
+        change.classList.add("present");
 }
-// let retrieve = getHour => { localStorage.getItem(form)}
-// let myKey = document.getAttributeById("9AM")
 
+let past = function() {
+    console.log(change);
+    change.classList.add("past");
+}
 
-/*=====  SCRIPT TO CHANGE HTML ========*/
+let future = function() {
+    console.log(change);
+    change.classList.add("future");
+}

@@ -1,6 +1,10 @@
 # work day scheduler 
 
 ## Summary
+
+
+<i class="ri-home-5-line"></i>
+
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
@@ -21,8 +25,13 @@ THEN the saved events persist
 ## 
 
 
+<a href="./assets/imgs/RemixIcon_Icon/RemixIcon_PNG_Black/mail-send-line.png"></a>
+
+<br>
+
 ## Contact Me
-[![Email: Yahoo](vlsulliv@yahoo.com)](www.yahoo.com)<br>
+
+[![Email: Yahoo](yahoo.com)](www.yahoo.com)<br>
 [![DM: Slack](vince_)](www.slack.com)<br>
 [![Social Media: linkedIn](https://linkedin.com/vlsulliv/)](www.linkedin.com)<br>
 [![Projects: GitHub](https://github.com/vlsulliv)](www.github.com)<br>

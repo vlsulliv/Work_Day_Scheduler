@@ -1,3 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+:root {
+  --text-color: #1A1A1A;
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --past: #CCCCCC;
+  --future: #74E96E;
+  --present: #F14D57;
+
+}
+ 
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding: 100px;
+}
+
+.test {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  font-size: 25px;
+  border-style: solid;
+  border-width: 10px;
+  padding-top: 25px;
+  margin-top: 55px;
+}
+
+/***************************
+       TEXT AREA
+***************************/
+
+#task {
+  background-color: var(--future);
+}
+
+.past{
+  background-color: var(--past);
+}
+
+.present{
+  background-color: var(--present);
+}
+
+.future{
+  background-color: var(--future);
+}
+
 /***************************
     ALL PAGE ELEMENTS
 ***************************/
@@ -6,157 +60,91 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
 }
 
-/***************************
+/* **************************
           HEADER
-***************************/
-.header-container {
- color: black;
-  border-bottom: black;
-  padding-top: 50px;
-}
+************************** */
 
 .jumbotron {
-  text-align: center;
-  border-bottom: solid;
-  box-shadow: 0 0 20px 1px grey;
-}
+   color: black;
+   text-align: center;
+   border-bottom: solid;
+   border-bottom: black;
+   box-shadow: 0 0 20px 10px grey;
+ } 
 
-.description {
-  white-space: pre-wrap;
+#task {
+  /* white-space: pre-wrap; */
+  border-style: solid;
+  border-width: 2px;
+  border-color:#000000;
 }
 
 input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 100%; 
+  padding: 20px; 
+  margin: 8px 0; 
+  display: inline-block; 
   box-sizing: border-box;
-  
+  font-weight: normal;
+  padding-top:10px;
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-
+  /* white-space: pre-wrap; */
+  height: 96px;
 }
 
 .model-container {
   padding-top: 50%;
 }
 
-.saveBtn {
+button {
   background-color: #06aed5;
   color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color:#000000;
+  height: 80px;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn{
-  background-color:#1e88e5;
-}
-
-.model-container {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0,0.4);
-}
-
-.modal {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  width: 80%;
-}
-
-.modal—container--close {
-  color: 1M;
-  float: right;
-  font-size: 28px;
-  font-weight: bold
-}
-
-.modal—container--close:hover,
-.modal—container--close:focus {
-  color: ❑black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.event {
-  padding-top: 8px;
-  font-size: 14px;
-  position: absolute;
-  height: 100%;
-}
-
-/***************************
-        COLORS
-***************************/
-.blue-color {
-  color:blue;
-}
-
-.green-color {
-  color:green;
-}
-
-.teal-color {
-  color:teal;
-}
-
-.yellow-color {
-  color:yellow;
-}
-
-.red-color {
-  color:red;
-}
-
-.red-color {
-  color:grey;
+button:hover {
+  font-size: 50px;
+  background-color: var(--past);
+  transition: all 0.2s ease-in-out;
 }
 
 /***************************
      STYLE TIME COLUMN
 ***************************/
 
- p span{
-   font-weight: 0.5px;
- }
-
-.hour{
+p {
    font-weight: 1px;
    font-family: sans-serif;
-   background-color: #ffffff;
    color: #000000;
    display:flex;
    align-items: center;
    justify-content: center;
    border-style: solid;
    border-width: 1px;
-   height: inherit;
+   /* height: inherit; */
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+
 }
 
-#currentDay{
-  padding-top:5px;
-  /* margin-top: 50px; */
+.block {
+  border-style: solid;
+  border-width: 2px;
+  border-color:#000000;
+  font-size: large;
   font-weight: bold;
-  font-size: 25px;
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  background-color: var(--past);
+}
+
+textarea{
+  height: 80px;
 }

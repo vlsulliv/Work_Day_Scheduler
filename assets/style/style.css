@@ -14,22 +14,12 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .container {
-  padding: 100px;
-}
-
-.test {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--blue);
-  font-size: 25px;
-  border-style: solid;
-  border-width: 10px;
-  padding-top: 25px;
-  margin-top: 55px;
+  padding: 0px 80px 80px 80px;
 }
 
 /***************************
@@ -52,16 +42,6 @@ body {
   background-color: var(--future);
 }
 
-/***************************
-    ALL PAGE ELEMENTS
-***************************/
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
-}
-
 /* **************************
           HEADER
 ************************** */
@@ -73,6 +53,16 @@ body {
    border-bottom: black;
    box-shadow: 0 0 20px 10px grey;
  } 
+
+#currentDay {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px; 
+  padding-top: 35px; 
+  color:darkmagenta"
+}
 
 #task {
   /* white-space: pre-wrap; */
@@ -142,9 +132,10 @@ p {
   border-color:#000000;
   font-size: large;
   font-weight: bold;
-  background-color: var(--past);
+  background-color: var(--present);
 }
 
 textarea{
   height: 80px;
+  background-color: var(--past);
 }

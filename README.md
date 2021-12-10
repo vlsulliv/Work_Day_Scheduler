@@ -1,45 +1,35 @@
-# work day scheduler 
+# work day scheduler
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)<br>
+
+Table of Contents
+* [Work Day Scheduler](work-day-scheduler)<br/>
+  -  [Summary](Summary)<br>
+  -  [Usage](Usage)<br>
+  -  [Technologies](Technologies)<br>
+  -  [Screenshot](Screeenshot)<br>
+  -  [Contact Me](Contact-Me)<br>
 
 ## Summary
 
+```
+Work day schedular is a light weight day scheduler that allows a user to plan their day. Enter a taask in the text field and click on the save icon to save a task. The hour fields will change colors as the day progresses to asssist with quick reference of remaining tasks. The present hour will is green, past hours are grey, and future hour will be clue. Saved task will automatically load when re-visit your tasks list.
+```
 
-<i class="ri-home-5-line"></i>
+## Technologies
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-##
+```
+1. MomentJS
+2. HTML
+3. CSS
+4. Javascript
+```
 
-
-
-## 
-
-
-<a href="./assets/imgs/RemixIcon_Icon/RemixIcon_PNG_Black/mail-send-line.png"></a>
-
-<br>
+## Screenshot
+![preview](./assets/imgs/Schedule.png)
 
 ## Contact Me
 
-[![Email: Yahoo](yahoo.com)](www.yahoo.com)<br>
-[![DM: Slack](vince_)](www.slack.com)<br>
-[![Social Media: linkedIn](https://linkedin.com/vlsulliv/)](www.linkedin.com)<br>
-[![Projects: GitHub](https://github.com/vlsulliv)](www.github.com)<br>
-
-
-
-## License
-
-### <span><b>MIT</b></span><br>
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
-
+> [Email](www.yahoo.com)<br>
+> [Slack](www.slack.com)<br>
+> [linkedIn](www.linkedin.com)<br>
+> [GitHub](www.github.com)<br>
